@@ -14,7 +14,7 @@ export class AboutPage implements OnInit {
   }
 
   async presentAlert() {
-   console.log('HOLA MUNDO, ESTO ES UNA ADVERTENCIA ')
+   console.log('Holi')
   }
 }
 

@@ -32,7 +32,7 @@ export class LoginPage implements OnInit {
     if(usuario.nombre == f.nombre && usuario.contrasenia == f.contrasenia){
       console.log('Ingresado')
 
-      this.navCtrl.navigateRoot('home')
+      this.navCtrl.navigateRoot('#')
 
       const loading = await this.loadingCtrl.create({
         message: 'Bienvenido ' + f.nombre,
@@ -44,7 +44,7 @@ export class LoginPage implements OnInit {
     }else{
       const alert = await this.alertController.create({
         header: 'Datos incorrectos',
-        message: 'Los datos ingresados no coinsiden',
+        message: 'Los datos ingresados no coinciden',
         buttons: ['Aceptar'],
       });
   
