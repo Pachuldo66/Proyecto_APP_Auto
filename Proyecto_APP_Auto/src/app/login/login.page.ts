@@ -44,7 +44,8 @@ export class LoginPage implements OnInit {
     }else{
       const alert = await this.alertController.create({
         header: 'Datos incorrectos',
-        message: 'Los datos ingresados no coinsiden',
+
+        message: 'Los datos ingresados no coinciden',    
         buttons: ['Aceptar'],
       });
   
